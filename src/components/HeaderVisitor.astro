@@ -1,0 +1,25 @@
+---
+import DarkButtons from "./DarkButtons.astro";
+import Link from "./Link.astro";
+
+---
+
+<header class="mb-2">
+    <nav class="p-3 max-w-[90%] mx-auto">
+        <ul class="flex justify-between items-center">
+            <a href="/">
+                <img class="w-28 m-3" src="../../public/Sena Learn LOGO.png" alt=""> 
+            </a>
+            <div class="flex items-center gap-10">
+                <div class="flex gap-10">
+                    <Link href="/inicio">Inicio</Link>
+                    <Link href="/cursos">Cursos</Link>
+                </div>
+                <div>
+                    <DarkButtons href="/login">Iniciar sesión</DarkButtons>
+                    <DarkButtons href="/register">Registrarse</DarkButtons>
+                </div>
+            </div>
+        </ul>
+    </nav>
+</header>

@@ -1,0 +1,127 @@
+---
+import Layout from "../layouts/Layout.astro";
+import MessageHeader from "../components/MessageHeader.astro";
+import HeaderVisitor from "../components/HeaderVisitor.astro";
+import SignUpCards from "../components/SignUpCards.astro";
+import CursosVisitor from "../components/CursosVisitor.astro";
+import DarkButtons from "../components/DarkButtons.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="cursos">
+    <MessageHeader />
+    <HeaderVisitor />
+    <CursosVisitor />
+    <section
+        class="w-full bg-[#fff] pb-20 flex flex-col justify-center items-center"
+    >
+        <div class="my-7">
+            <h1 class="text-3xl font-bold text-[#00324D]">Sistemas</h1>
+        </div>
+        <div class="w-full grid gap-10 grid-cols-4 place-items-center">
+            <SignUpCards
+                title="Desarrollo Front-End con HTML, CSS y JavaScript"
+                score="4.8"
+                img="../../public/image1.jpg"
+                category="Desarrollo de software"
+                href="/courses/Desarrollo%20Front-End%20con%20HTML,%20CSS%20y%20JavaScript/info"
+            >
+                <i slot="stars" class="fa-solid fa-star"></i>
+                <i slot="stars" class="fa-solid fa-star"></i>
+                <i slot="stars" class="fa-solid fa-star"></i>
+                <i slot="stars" class="fa-solid fa-star"></i>
+            </SignUpCards>
+            <SignUpCards
+                title="Desarrollo Back-End con PHP, Python y Java"
+                score="4.7"
+                img="../../public/image2.jpeg"
+                category="Desarrollo de software"
+                href="/courses/Desarrollo%20Front-End%20con%20HTML,%20CSS%20y%20JavaScript/info"
+            >
+                <i slot="stars" class="fa-solid fa-star"></i>
+                <i slot="stars" class="fa-solid fa-star"></i>
+                <i slot="stars" class="fa-solid fa-star"></i>
+            </SignUpCards>
+            <SignUpCards
+                title="Introducción a Bases de datos y SQL"
+                score="4.8"
+                img="../../public/image3.jpeg"
+                category="Desarrollo de software"
+                href="/courses/Desarrollo%20Front-End%20con%20HTML,%20CSS%20y%20JavaScript/info"
+            >
+                <i slot="stars" class="fa-solid fa-star"></i>
+                <i slot="stars" class="fa-solid fa-star"></i>
+                <i slot="stars" class="fa-solid fa-star"></i>
+                <i slot="stars" class="fa-solid fa-star"></i>
+            </SignUpCards>
+
+            <SignUpCards
+                title="Introducción a Nodejs y experess"
+                score="4.8"
+                img="../../public/nodejs-logo-image.png"
+                category="Desarrollo de software"
+                href="/courses/Desarrollo%20Front-End%20con%20HTML,%20CSS%20y%20JavaScript/info"
+            >
+                <i slot="stars" class="fa-solid fa-star"></i>
+                <i slot="stars" class="fa-solid fa-star"></i>
+                <i slot="stars" class="fa-solid fa-star"></i>
+                <i slot="stars" class="fa-solid fa-star"></i>
+                <i slot="stars" class="fa-solid fa-star"></i>
+            </SignUpCards>
+
+            <SignUpCards
+                title="Introducción Python"
+                score="4.8"
+                img="../../public/Python-Symbol_0.png"
+                category="Desarrollo de software"
+                href="/courses/Desarrollo%20Front-End%20con%20HTML,%20CSS%20y%20JavaScript/info"
+            >
+                <i slot="stars" class="fa-solid fa-star"></i>
+                <i slot="stars" class="fa-solid fa-star"></i>
+                <i slot="stars" class="fa-solid fa-star"></i>
+                <i slot="stars" class="fa-solid fa-star"></i>
+                <i slot="stars" class="fa-solid fa-star"></i>
+            </SignUpCards>
+
+            <SignUpCards
+                title="Introducción Java"
+                score="4.8"
+                img="../../public/java-logo.png"
+                category="Desarrollo de software"
+                href="/courses/Desarrollo%20Front-End%20con%20HTML,%20CSS%20y%20JavaScript/info"
+            >
+                <i slot="stars" class="fa-solid fa-star"></i>
+                <i slot="stars" class="fa-solid fa-star"></i>
+                <i slot="stars" class="fa-solid fa-star"></i>
+                <i slot="stars" class="fa-solid fa-star"></i>
+            </SignUpCards>
+
+            <SignUpCards
+                title="Introducción a la React"
+                score="4.8"
+                img="../../public/reactjs.webp"
+                category="Desarrollo de software"
+                href="/courses/Desarrollo%20Front-End%20con%20HTML,%20CSS%20y%20JavaScript/info"
+            >
+                <i slot="stars" class="fa-solid fa-star"></i>
+                <i slot="stars" class="fa-solid fa-star"></i>
+                <i slot="stars" class="fa-solid fa-star"></i>
+            </SignUpCards>
+
+            <SignUpCards
+                title="Introducción Ruby"
+                score="4.8"
+                img="../../public/image3.jpeg"
+                category="Desarrollo de software"
+                href="/courses/Desarrollo%20Front-End%20con%20HTML,%20CSS%20y%20JavaScript/info"
+            >
+                <i slot="stars" class="fa-solid fa-star"></i>
+                <i slot="stars" class="fa-solid fa-star"></i>
+                <i slot="stars" class="fa-solid fa-star"></i>
+                <i slot="stars" class="fa-solid fa-star"></i>
+            </SignUpCards>
+        </div>
+    </section>
+
+    <Footer />
+</Layout>

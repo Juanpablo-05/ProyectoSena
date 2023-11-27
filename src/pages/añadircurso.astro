@@ -1,0 +1,25 @@
+---
+import Layout from "../layouts/Layout.astro";
+import HeaderAdmin from "../components/HeaderAdmin.astro";
+import DarkButtons from "../components/DarkButtons.astro";
+import Footer from "../components/Footer.astro";
+import Icurso from "../components/Icurso.astro";
+import Acurso from "../components/Acurso.astro";
+---
+
+
+<Layout title="añadir">
+    <HeaderAdmin/>
+    <section class="w-full h-max flex flex-col items-center justify-center mb-10">
+        <h1 class="text-center font-bold text-[30px]">Añadir nuevo curso</h1>
+        <Icurso/>
+        <h2 class="text-center font-bold text-[25px]">Modulos</h2>
+        <Acurso/>
+    </section>
+    <section class="w-full mb-10 flex items-center justify-center ">
+        <div class="w-1/2 flex justify-end">
+            <DarkButtons>Agregar curso</DarkButtons>
+        </div>
+    </section>
+    <Footer/>
+</Layout>
